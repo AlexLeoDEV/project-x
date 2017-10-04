@@ -1,0 +1,29 @@
+span, h4 {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+span {
+  color: #919191;
+}
+
+span.message, span.date {
+  font-size: 0.8em;
+}
+
+span.contact-name {
+  font-size: 0.95em;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.search-contact-form {
+  min-width: 150px;
+  width: 100%;
+}
+
+.search-contact-full-width {
+  width: 100%;
+}

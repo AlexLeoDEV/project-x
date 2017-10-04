@@ -1,0 +1,26 @@
+<div *ngIf="contact">
+  <form class="contact-details-form"  (ngSubmit)="onUpdateClientInfo(contact)">
+    <md-form-field class="contact-details-full-width">
+      <input mdInput placeholder="Name" [(ngModel)]="contact.contactName"
+             name="name" >
+      <md-icon mdSuffix>mode_edit</md-icon>
+    </md-form-field>
+
+    <md-form-field class="contact-details-full-width">
+      <input mdInput placeholder="Number" [(ngModel)]="contact.contactNumber"
+             name="number">
+      <md-icon mdSuffix>mode_edit</md-icon>
+    </md-form-field>
+
+    <button md-raised-button (click)="onBack()">
+      <md-icon>keyboard_arrow_left</md-icon>Back
+    </button>
+    <button md-raised-button type="submit">
+      <md-icon>update</md-icon>Update
+    </button>
+  </form>
+</div>
+
+
+
+

@@ -1,0 +1,77 @@
+h4 {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+img {
+  width: 50px;
+}
+
+span.header-login {
+  font-size: 0.9em;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: 20px;
+}
+
+span.header-email {
+  font-size: 0.75em;
+  padding-left: 10px;
+}
+
+.btn-sidenav-content {
+display: flex;
+height: 100%;
+align-items: center;
+justify-content: center;
+}
+
+md-sidenav-container{
+  height: 100%;
+}
+
+/* Sidenav Section*/
+.sidenav-main {
+  border-right: 1px solid rgba(0,0,0,.14);
+  bottom: 0;
+  background: #ffffff;
+  color: #212121;
+  display: block;
+  font-family: Roboto,sans-serif;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 256px;
+  z-index: 4;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition-delay: .1s;
+  transition-duration: .2s;
+  transition-property: transform,left;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.sidenav-main nav dl dt {
+  border-left: 2px solid transparent;
+  color: #212121;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+}
+
+.logo {
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 700;
+  box-sizing: border-box;
+  display: block;
+  height: 64px;
+  padding: 12px 0 11px 24px;
+  position: relative;
+}
+
+

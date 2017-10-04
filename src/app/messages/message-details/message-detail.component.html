@@ -1,0 +1,27 @@
+<div *ngIf="message" fxFlex fxLayout="column">
+
+  <div class="contact-name">
+    <!--<img mdListIcon [src]="message.imageUrl">-->
+    <span>{{message.contactName}}</span>
+    <md-divider></md-divider>
+  </div>
+
+  <div fxLayout="row">
+    <span fxFlex="1 1 auto">{{message.messageText}}</span>
+    <span fxFlex="0 0 auto" class="message-datetime">{{message.messageDate}}</span>
+  </div>
+
+  <md-divider></md-divider>
+
+  <form class="send-message-form" (ngSubmit)="onSendMessage(message)">
+    <md-form-field fxFlex="1 1 auto" class="send-message" fxLayout="column">
+        <input mdInput placeholder="Enter message"
+             value="" name="message"
+             [(ngModel)]="message.messageNew">
+    </md-form-field>
+
+    <button fxFlex="" type="submit" md-button (click)="onSendMessage()">
+      <md-icon>send</md-icon>
+    </button>
+  </form>
+</div>

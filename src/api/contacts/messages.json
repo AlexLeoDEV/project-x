@@ -1,0 +1,106 @@
+[
+  {
+    "contactId": 1,
+    "contactName": "Arz Bhatia",
+    "messageDate": "Mar 19",
+    "messageText": "You: I wish the best for this new year!",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 2,
+    "contactName": "Melvin Joosten",
+    "messageDate": "Dec 25",
+    "messageText": "You: If waiting :(",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 3,
+    "contactName": "Ryan Kelly",
+    "messageDate": "Nov 30",
+    "messageText": "No can do, sorry",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 4,
+    "contactName": "Manuel Labrador Vianthi",
+    "messageDate": "Nov 30",
+    "messageText": "Sorry, I've benn out whole weekend",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 5,
+    "contactName": "Rushabh Kothari",
+    "messageDate": "Nov 29",
+    "messageText": ":)",
+    "messageNew":"",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 6,
+    "contactName": "Mohammed Musaddiq",
+    "messageDate": "Nov 17",
+    "messageText": "You: I'm just waiting for the icon :(",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 7,
+    "contactName": "Johan Jonsson",
+    "messageDate": "Nov 17",
+    "messageText": "You: What's up.",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 8,
+    "contactName": "Melvin Joosten",
+    "messageDate": "Dec 25",
+    "messageText": "You: If waiting :(",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 9,
+    "contactName": "Ryan Kelly",
+    "messageDate": "Nov 30",
+    "messageText": "No can do, sorry",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 10,
+    "contactName": "Manuel Labrador Vianthi",
+    "messageDate": "Nov 30",
+    "messageText": "Sorry, I've benn out whole weekend",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 11,
+    "contactName": "Rushabh Kothari",
+    "messageDate": "Nov 29",
+    "messageText": ":)",
+    "messageNew":"",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 12,
+    "contactName": "Mohammed Musaddiq",
+    "messageDate": "Nov 17",
+    "messageText": "You: I'm just waiting for the icon :(",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": 13,
+    "contactName": "Johan Jonsson",
+    "messageDate": "Nov 17",
+    "messageText": "You: What's up.",
+    "messageNew": "",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  }
+]

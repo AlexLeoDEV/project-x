@@ -1,0 +1,16 @@
+.contact-name {
+  margin: 25px;
+  text-align: center;
+}
+
+.send-message-form {
+  margin-top: 25px;
+}
+
+.send-message {
+  width: 100%;
+}
+
+.message-datetime {
+  font-size: 10px;
+}

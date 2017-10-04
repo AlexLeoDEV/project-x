@@ -1,0 +1,44 @@
+[
+  {
+    "contactId": "1",
+    "contactName": "Arz Bhatia",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "2",
+    "contactName": "Melvin Joosten",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "3",
+    "contactName": "Ryan Kelly",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "4",
+    "contactName": "Manuel Labrador Vianthi",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "5",
+    "contactName": "Rushabh Kothari",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "6",
+    "contactName": "Mohammed Musaddiq",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  },
+  {
+    "contactId": "7",
+    "contactName": "Johan Jonsson",
+    "contactNumber": "467313245678",
+    "imageUrl": "https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+  }
+]

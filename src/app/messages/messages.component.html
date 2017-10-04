@@ -1,0 +1,33 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav
+              class="sidenav-messaging"
+              mode="side"
+              [opened]="hasActiveSubRoute()"
+              (onClose)="removeSubRoute()">
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="removeSubRoute()">
+        <md-icon>arrow_back</md-icon>
+      </button>
+    </md-toolbar>
+    <router-outlet></router-outlet>
+  </md-sidenav>
+
+  <md-nav-list>
+    <ng-container *ngFor="let message of messages">
+      <a md-list-item
+         [routerLink]="['/messages', message.contactId]" >
+          <img mdListIcon [src]="message.imageUrl">
+
+          <h3 mdLine fxLayout="row">
+            <span fxFlex="1 1 auto">{{message.contactName}}</span>
+            <span fxFlex="none">{{message.messageDate}}</span>
+          </h3>
+
+          <p mdLine>
+            <span>{{message.messageText}} </span>
+          </p>
+      </a>
+      <md-divider></md-divider>
+    </ng-container>
+  </md-nav-list>
+</md-sidenav-container>

@@ -1,0 +1,40 @@
+<md-list>
+  <form class="search-contact-form">
+    <md-form-field class="search-contact-full-width">
+      <input mdInput placeholder="Type a name, email, number or circle" value=""
+             [(ngModel)]="listFilter" name="search-contact">
+    </md-form-field>
+  </form>
+
+ <h4>Frequent Contacts</h4>
+  <md-nav-list>
+    <ng-container *ngFor="let contact of contacts | frequentContacts">
+      <md-divider></md-divider>
+      <a md-list-item [routerLink]="['view', contact.contactId]">
+        <img mdListIcon [src]="contact.imageUrl">
+        <h3 mdLine fxLayout="row">
+          <span fxFlex="1 1 auto">{{contact.contactName}}</span>
+        </h3>
+        <p mdLine>
+          <span>{{contact.contactNumber}} </span>
+        </p>
+      </a>
+    </ng-container>
+  </md-nav-list>
+
+  <h4>Contacts</h4>
+  <md-nav-list>
+    <ng-container *ngFor="let contact of filteredContacts">
+      <md-divider></md-divider>
+      <a md-list-item [routerLink]="['view', contact.contactId]">
+        <img mdListIcon [src]="contact.imageUrl">
+        <h3 mdLine fxLayout="row">
+          <span fxFlex="1 1 auto">{{contact.contactName}}</span>
+        </h3>
+        <p mdLine>
+          <span>{{contact.contactNumber}} </span>
+        </p>
+      </a>
+    </ng-container>
+  </md-nav-list>
+</md-list>

@@ -1,0 +1,28 @@
+<form class="contact-details-form" contact (ngSubmit)="onCreateContact(contact)">
+
+  <md-form-field class="contact-details-full-width">
+    <input mdInput placeholder="Name" name="name" [(ngModel)]="contact.contactName">
+    <md-icon mdSuffix>mode_edit</md-icon>
+  </md-form-field>
+
+  <md-form-field class="contact-details-full-width">
+    <input mdInput placeholder="Number" name="number" [(ngModel)]="contact.contactNumber">
+    <md-icon mdSuffix>mode_edit</md-icon>
+  </md-form-field>
+
+  <md-form-field class="contact-details-full-width">
+    <input mdInput placeholder="Image Url" name="url" [(ngModel)]="contact.imageUrl">
+    <md-icon mdSuffix>mode_edit</md-icon>
+  </md-form-field>
+
+  <button md-raised-button (click)="onBack()">
+    <md-icon>keyboard_arrow_left</md-icon>Back
+  </button>
+  <button md-raised-button type="submit">
+    <md-icon>create</md-icon>Create
+  </button>
+</form>
+
+
+
+

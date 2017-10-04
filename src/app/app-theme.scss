@@ -1,0 +1,56 @@
+@import '../../node_modules/@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@include mat-core();
+
+@import '../app/custom-component.scss';
+
+$candy-app-primary: mat-palette($mat-green, 400);
+$candy-app-accent: mat-palette($mat-amber, 500);
+
+$candy-app-warn: mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+@include angular-material-theme($candy-app-theme);
+
+//@include candy-carousel-theme($theme);
+
+.light-lilac-theme {
+  // light lilac theme
+  $light-app-primary: mat-palette($mat-deep-purple, 600);
+  $light-app-accent: mat-palette($mat-blue-grey);
+  $light-warn:    mat-palette($mat-deep-orange);
+  $light-lilac-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
+
+  @include angular-material-theme($light-lilac-theme);
+}
+
+.light-blue-theme {
+  // Light blue theme
+  $light-app-primary: mat-palette($mat-indigo, 500);
+  $light-app-accent: mat-palette($mat-blue-grey);
+  $light-warn:    mat-palette($mat-deep-orange);
+  $light-blue-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
+
+  @include angular-material-theme($light-blue-theme);
+}
+
+.dark-purple-theme {
+  // Dark purple theme
+  $dark-app-primary: mat-palette($mat-purple, 400);
+  $dark-app-accent: mat-palette($mat-blue-grey);
+  $dark-warn:    mat-palette($mat-deep-orange);
+  $dark-purple-app-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
+
+  @include angular-material-theme($dark-purple-app-theme);
+}
+
+.dark-pink-theme {
+  // Dark pink theme
+  $dark-app-primary: mat-palette($mat-pink, 700);
+  $dark-app-accent: mat-palette($mat-blue-grey);
+  $dark-warn:    mat-palette($mat-deep-orange);
+  $dark-pink-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
+
+  @include angular-material-theme($dark-pink-theme);
+}
