@@ -34,11 +34,24 @@
         <button md-button [mdMenuTriggerFor]="menu">
           <md-icon>format_color_fill</md-icon>
         </button>
-        <md-menu #menu="mdMenu">
-          <button md-menu-item (click)="onChangeTheme('light-lilac-theme')">Light lilac</button>
-          <button md-menu-item (click)="onChangeTheme('light-blue-theme')"> Light blue</button>
-          <button md-menu-item (click)="onChangeTheme('dark-purple-theme')">Dark purple</button>
-          <button md-menu-item (click)="onChangeTheme('dark-pink-theme')">Dark pink</button>
+        <md-menu #menu="mdMenu" fxLayout="column">
+          <div fxLayout="row">
+            <button fxFlex md-menu-item (click)="onChangeTheme('light-lilac-theme')">
+              <span class="circle-lilac"></span>
+            </button>
+            <button fxFlex md-menu-item (click)="onChangeTheme('light-blue-theme')">
+              <span class="circle-blue"></span>
+            </button>
+          </div>
+          <div  fxLayout="row">
+            <button md-menu-item (click)="onChangeTheme('dark-purple-theme')">
+              <span class="circle-purple"></span>
+            </button>
+            <button md-menu-item (click)="onChangeTheme('dark-pink-theme')">
+              <span class="circle-pink"></span>
+            </button>
+          </div>
+
         </md-menu>
 
         <button type="button" md-button

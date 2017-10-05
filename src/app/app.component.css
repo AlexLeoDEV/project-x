@@ -74,4 +74,26 @@ md-sidenav-container{
   position: relative;
 }
 
+.circle-lilac:before {
+  content: '\25CF';
+  font-size: 85px;
+  color: #673ab7;
+}
 
+.circle-blue:before {
+  content: '\25CF';
+  font-size: 85px;
+  color: #3f51b5;
+}
+
+.circle-purple:before {
+  content: '\25CF';
+  font-size: 85px;
+  color: #e91e63;
+}
+
+.circle-pink:before {
+  content: '\25CF';
+  font-size: 85px;
+  color: #9c27b0;
+}
