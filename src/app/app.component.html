@@ -1,70 +1,72 @@
-<md-sidenav-container class="{{theme}}">
-  <md-sidenav #sidenav class="sidenav-main">
-    <span class="logo">Project-X</span>
-    <nav>
-      <dl>
-        <dt>Item 1</dt>
-        <dt>Item 2</dt>
-        <dt>Item 3</dt>
-      </dl>
-    </nav>
-  </md-sidenav>
+<div class="{{theme}}">
+  <md-sidenav-container>
+    <md-sidenav #sidenav class="sidenav-main">
+      <span class="logo">Project-X</span>
+      <nav>
+        <dl>
+          <dt>Item 1</dt>
+          <dt>Item 2</dt>
+          <dt>Item 3</dt>
+        </dl>
+      </nav>
+    </md-sidenav>
 
-  <div fxLayout="column nowrap">
-    <md-toolbar color="primary" fxFlex="none">
-      <div class="btn-sidenav-content">
-        <button type="button" md-icon-button (click)="sidenav.open()">
-          <md-icon>menu</md-icon>
+    <div fxLayout="column nowrap">
+      <md-toolbar color="primary" fxFlex="none">
+        <div class="btn-sidenav-content">
+          <button type="button" md-icon-button (click)="sidenav.open()">
+            <md-icon>menu</md-icon>
+          </button>
+        </div>
+
+        <div fxFlex fxLayout="row">
+          <div fxFlex="0 1 auto">
+            <img mdListIcon
+                 src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+                 alt="ava">
+          </div>
+          <div fxLayout="column">
+            <span fxFlex="1 1 auto" class="header-login">Victor Burgoa</span>
+            <span fxFlex="1 1 auto" class="header-email">mycolorscreens@gmail.com</span>
+          </div>
+        </div>
+
+        <button md-button [mdMenuTriggerFor]="menu">
+          <md-icon>format_color_fill</md-icon>
         </button>
+        <md-menu #menu="mdMenu">
+          <button md-menu-item (click)="onChangeTheme('light-lilac-theme')">Light lilac</button>
+          <button md-menu-item (click)="onChangeTheme('light-blue-theme')"> Light blue</button>
+          <button md-menu-item (click)="onChangeTheme('dark-purple-theme')">Dark purple</button>
+          <button md-menu-item (click)="onChangeTheme('dark-pink-theme')">Dark pink</button>
+        </md-menu>
+
+        <button type="button" md-button
+                [routerLink]="['/contacts/new']">
+          <md-icon>add</md-icon>
+        </button>
+      </md-toolbar>
+
+      <nav fxFlex="none" md-tab-nav-bar backgroundColor="primary">
+        <a fxFlex="1 1 auto" md-tab-link
+           routerLink="contacts"
+           routerLinkActive
+           #contactsRla="routerLinkActive"
+           [active]="contactsRla.isActive">
+          <md-icon>person</md-icon>
+        </a>
+        <a fxFlex="1 1 auto" md-tab-link
+           routerLink="messages"
+           routerLinkActive
+           #messagesRla="routerLinkActive"
+           [active]="messagesRla.isActive">
+          <md-icon>messages</md-icon>
+        </a>
+      </nav>
+
+      <div fxFlex>
+        <router-outlet></router-outlet>
       </div>
-
-      <div fxFlex fxLayout="row">
-        <div fxFlex="0 1 auto">
-          <img mdListIcon
-               src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
-               alt="ava">
-        </div>
-        <div fxLayout="column">
-          <span fxFlex="1 1 auto" class="header-login">Victor Burgoa</span>
-          <span fxFlex="1 1 auto" class="header-email">mycolorscreens@gmail.com</span>
-        </div>
-      </div>
-
-      <button md-button [mdMenuTriggerFor]="menu">
-        <md-icon>format_color_fill</md-icon>
-      </button>
-      <md-menu #menu="mdMenu">
-        <button md-menu-item (click)="onChangeTheme(1)">Light lilac</button>
-        <button md-menu-item (click)="onChangeTheme(2)">Light blue</button>
-        <button md-menu-item (click)="onChangeTheme(3)">Dark purple</button>
-        <button md-menu-item (click)="onChangeTheme(4)">Dark pink</button>
-      </md-menu>
-
-      <button type="button" md-button
-              [routerLink]="['/contacts/new']">
-        <md-icon>add</md-icon>
-      </button>
-    </md-toolbar>
-
-    <nav fxFlex="none" md-tab-nav-bar backgroundColor="primary">
-      <a fxFlex="1 1 auto"  md-tab-link
-         routerLink="contacts"
-         routerLinkActive
-         #contactsRla="routerLinkActive"
-         [active]="contactsRla.isActive">
-        <md-icon>person</md-icon>
-      </a>
-      <a fxFlex="1 1 auto"  md-tab-link
-         routerLink="messages"
-         routerLinkActive
-         #messagesRla="routerLinkActive"
-         [active]="messagesRla.isActive">
-        <md-icon>messages</md-icon>
-      </a>
-    </nav>
-
-    <div fxFlex>
-      <router-outlet></router-outlet>
     </div>
-  </div>
-</md-sidenav-container>
+  </md-sidenav-container>
+</div>

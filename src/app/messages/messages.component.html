@@ -18,7 +18,7 @@
          [routerLink]="['/messages', message.contactId]" >
           <img mdListIcon [src]="message.imageUrl">
 
-          <h3 mdLine fxLayout="row">
+          <h3 mdLine fxLayout="row" class="hangouts-theme">
             <span fxFlex="1 1 auto">{{message.contactName}}</span>
             <span fxFlex="none">{{message.messageDate}}</span>
           </h3>

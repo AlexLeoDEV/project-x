@@ -5,8 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import {
   MdIconModule, MdButtonModule, MatInputModule, MdListModule, MdSidenavModule,
-  MdToolbarModule, MdTabsModule
-} from '@angular/material';
+  MdToolbarModule, MdTabsModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MessageDetailComponent } from './message-details/message-detail.component';
