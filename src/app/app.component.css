@@ -86,13 +86,13 @@ md-sidenav-container{
   color: #3f51b5;
 }
 
-.circle-purple:before {
+.circle-pink:before {
   content: '\25CF';
   font-size: 85px;
   color: #e91e63;
 }
 
-.circle-pink:before {
+.circle-purple:before {
   content: '\25CF';
   font-size: 85px;
   color: #9c27b0;
