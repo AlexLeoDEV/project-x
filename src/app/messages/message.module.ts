@@ -28,8 +28,6 @@ const messageRoutes: Routes = [
     HttpClientModule,
     MdButtonModule,
     MdIconModule,
-    MdButtonModule,
-    MdIconModule,
     MdTabsModule,
     MdToolbarModule,
     MdSidenavModule,

@@ -6,7 +6,7 @@ import * as _ from 'lodash';
   pure: false
 })
 
-export class FrequentContactsPipe implements PipeTransform {
+export class ContactFrequentPipe implements PipeTransform {
   transform(value: any): any {
     if (value !== undefined && value !== null) {
       return _.uniqBy(value, 'name');

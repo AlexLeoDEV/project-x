@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule,
-MdTabsModule, MdToolbarModule, MatInputModule, MatMenuModule, MatRadioModule } from '@angular/material';
+import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule, MdTabsModule, MdToolbarModule,
+  MatInputModule, MatMenuModule, MatRadioModule, MatTooltipModule } from '@angular/material';
 
 import { SharedModule } from './shared/shared.module';
 import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.component';
@@ -28,6 +28,7 @@ import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.co
     MatRadioModule,
     FormsModule,
     FlexLayoutModule,
+    MatTooltipModule,
     RouterModule.forRoot([
       {
         path: 'contacts',

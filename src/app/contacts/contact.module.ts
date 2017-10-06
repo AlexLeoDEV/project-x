@@ -11,7 +11,7 @@ import { ContactsService } from './contacts.service';
 import { ContactsNewComponent } from './contact-new/contacts-new.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactsPageComponent } from './contacts-page.component';
-import { FrequentContactsPipe } from './contact-frequent.pipe';
+import { ContactFrequentPipe } from './contact-frequent.pipe';
 
 const contactRoutes: Routes = [
   {
@@ -34,8 +34,6 @@ const contactRoutes: Routes = [
     MatInputModule,
     FormsModule,
     FlexLayoutModule,
-    MdButtonModule,
-    MdIconModule,
     MdTabsModule,
     MdToolbarModule,
     MdSidenavModule,
@@ -46,7 +44,7 @@ const contactRoutes: Routes = [
     ContactsPageComponent,
     ContactDetailComponent,
     ContactsNewComponent,
-    FrequentContactsPipe
+    ContactFrequentPipe
   ],
   providers: [ContactsService]
 })

@@ -10,12 +10,8 @@ span.contact-name {
   font-size: 0.95em;
 }
 
-/* Sidenav Section*/
 .sidenav-messaging {
-  border-right: 1px solid rgba(0,0,0,.14);
   bottom: 0;
-  background: #ffffff;
-  color: #212121;
   display: block;
   font-family: Roboto,sans-serif;
   left: 0;
@@ -38,8 +34,4 @@ span.contact-name {
   font-weight: 400;
   margin-top: 0;
   padding: 15px 0 15px 22px;
-}
-
-h3 {
-  color: aqua;
 }

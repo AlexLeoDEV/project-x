@@ -1,8 +1,10 @@
-<div *ngIf="message" fxFlex fxLayout="column">
+<div *ngIf="message">
 
-  <div class="contact-name">
-    <!--<img mdListIcon [src]="message.imageUrl">-->
-    <span>{{message.contactName}}</span>
+  <div class="contact-message">
+    <div fxFlex="0 1 auto">
+      <img [src]="message.imageUrl">
+    </div>
+    <span fxFlex="1 1 auto" class="contact-name">{{message.contactName}}</span>
     <md-divider></md-divider>
   </div>
 
@@ -13,14 +15,14 @@
 
   <md-divider></md-divider>
 
-  <form class="send-message-form" (ngSubmit)="onSendMessage(message)">
-    <md-form-field fxFlex="1 1 auto" class="send-message" fxLayout="column">
+  <form class="send-message-form" (ngSubmit)="onSendMessage(message)" fxLayout="row">
+    <md-form-field class="send-message">
         <input mdInput placeholder="Enter message"
              value="" name="message"
              [(ngModel)]="message.messageNew">
     </md-form-field>
 
-    <button fxFlex="" type="submit" md-button (click)="onSendMessage()">
+    <button md-icon-button (click)="onSendMessage()">
       <md-icon>send</md-icon>
     </button>
   </form>

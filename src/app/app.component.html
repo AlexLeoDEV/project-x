@@ -14,15 +14,14 @@
     <div fxLayout="column nowrap">
       <md-toolbar color="primary" fxFlex="none">
         <div class="btn-sidenav-content">
-          <button type="button" md-icon-button (click)="sidenav.open()">
+          <button mdTooltip="Navigation" type="button" md-icon-button (click)="sidenav.open()">
             <md-icon>menu</md-icon>
           </button>
         </div>
 
         <div fxFlex fxLayout="row">
           <div fxFlex="0 1 auto">
-            <img mdListIcon
-                 src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
+            <img src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/gender-male2-512.png"
                  alt="ava">
           </div>
           <div fxLayout="column">
@@ -31,7 +30,7 @@
           </div>
         </div>
 
-        <button md-button [mdMenuTriggerFor]="menu">
+        <button md-icon-button mdTooltip="Select a theme!" [mdMenuTriggerFor]="menu">
           <md-icon>format_color_fill</md-icon>
         </button>
         <md-menu #menu="mdMenu" fxLayout="column">
@@ -51,11 +50,9 @@
               <span class="circle-pink"></span>
             </button>
           </div>
-
         </md-menu>
 
-        <button type="button" md-button
-                [routerLink]="['/contacts/new']">
+        <button md-icon-button mdTooltip="New contact" [routerLink]="['/contacts/new']">
           <md-icon>add</md-icon>
         </button>
       </md-toolbar>
