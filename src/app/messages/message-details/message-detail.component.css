@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.message-datetime {
-  font-size: 10px;
-}
-
 img {
   padding-bottom: 1.5em;
   margin-top: 1em;
@@ -20,4 +16,21 @@ img {
 .contact-name {
   margin-top: 1.7em;
   padding-left: 10px;
+}
+
+.sent-message-group {
+  background-color: #e0e0e0;
+  border-color: #bbbbbb;
+  border-radius: 50px;
+}
+
+.sent-message-date {
+  margin: 5px 5px;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.sent-message-text {
+  padding: 15px;
+  font-size: 14px;
 }

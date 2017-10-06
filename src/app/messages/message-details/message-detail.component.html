@@ -8,9 +8,9 @@
     <md-divider></md-divider>
   </div>
 
-  <div fxLayout="row">
-    <span fxFlex="1 1 auto">{{message.messageText}}</span>
-    <span fxFlex="0 0 auto" class="message-datetime">{{message.messageDate}}</span>
+  <div class="sent-message-group" fxLayout="row">
+    <span class="sent-message-text" fxFlex="1 1 auto">{{message.messageText}}</span>
+    <span class="sent-message-date" fxFlex="0 1 auto" >{{message.messageDate}}</span>
   </div>
 
   <md-divider></md-divider>
