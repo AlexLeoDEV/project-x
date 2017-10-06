@@ -4,7 +4,6 @@ import { ContactsService } from '../contacts.service';
 import { Contact, Contacts } from '../contact.model';
 
 @Component({
-  selector: 'app-contacts',
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
@@ -24,20 +23,18 @@ export class ContactListComponent implements OnInit {
 
   constructor(private contactsService: ContactsService) { }
 
-
   ngOnInit(): void {
     this.contactsService.contacts.subscribe((contacts: Contacts) => {
         this.contacts = contacts;
         this.filteredContacts = this.contacts;
-      }, error => this.errorMessage = <any>error
-    );
+    }, error => this.errorMessage = <any>error);
     this.filteredContacts = this.contacts;
   }
 
   performFilter(filterBy: string): Contacts {
     filterBy = filterBy.toLocaleLowerCase();
     return this.contacts.filter((contact: Contact) =>
-      contact.contactName.toLocaleLowerCase().indexOf(filterBy) !== -1);
+    contact.contactName.toLocaleLowerCase().indexOf(filterBy) !== -1);
   }
 }
 

@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import {
-  MdButtonModule, MdIconModule, MatInputModule, MdListModule, MdSidenavModule,
-  MdToolbarModule, MdTabsModule
-} from '@angular/material';
+import { MdButtonModule, MdIconModule, MatInputModule, MdListModule,
+  MdSidenavModule, MdToolbarModule, MdTabsModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 
@@ -13,7 +11,7 @@ import { ContactsService } from './contacts.service';
 import { ContactsNewComponent } from './contact-new/contacts-new.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactsPageComponent } from './contacts-page.component';
-import { FrequentContactsPipe } from './frequent.contact.pipe';
+import { FrequentContactsPipe } from './contact-frequent.pipe';
 
 const contactRoutes: Routes = [
   {

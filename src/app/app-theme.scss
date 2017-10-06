@@ -10,7 +10,7 @@ $candy-app-warn: mat-palette($mat-red);
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 @include angular-material-theme($candy-app-theme);
 
-//@include hangouts-theme($candy-app-theme);
+//@include contact-detail-theme($candy-app-theme);
 
 .custom-input-color {
   //$color: aqua;
@@ -22,17 +22,14 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 }
 
 .light-lilac-theme {
-  // light lilac theme
   $light-app-primary: mat-palette($mat-deep-purple, 500);
   $light-app-accent: mat-palette($mat-blue-grey);
   $light-warn:    mat-palette($mat-deep-orange);
   $light-lilac-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
-
   @include angular-material-theme($light-lilac-theme);
 }
 
 .light-blue-theme{
-  // Light blue theme
   $light-app-primary: mat-palette($mat-indigo, 500);
   $light-app-accent: mat-palette($mat-blue-grey);
   $light-warn:    mat-palette($mat-deep-orange);
@@ -42,33 +39,17 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 
 .dark-purple-theme {
-  // Dark purple theme
   $dark-app-primary: mat-palette($mat-purple, 500);
   $dark-app-accent: mat-palette($mat-blue-grey);
   $dark-warn:    mat-palette($mat-deep-orange);
   $dark-purple-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
-
   @include angular-material-theme($dark-purple-theme);
 }
 
 .dark-pink-theme {
-   //Dark pink theme
   $dark-app-primary: mat-palette($mat-pink, 500);
   $dark-app-accent: mat-palette($mat-blue-grey);
   $dark-warn:    mat-palette($mat-deep-orange);
   $dark-pink-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
-
   @include angular-material-theme($dark-pink-theme);
 }
-
-
-//@mixin light-lilac-theme($theme) {
-//  // light lilac theme
-//  $light-app-primary: mat-palette($mat-deep-purple, 500);
-//  $light-app-accent: mat-palette($mat-blue-grey);
-//  $light-warn:    mat-palette($mat-deep-orange);
-//  $light-lilac-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
-//
-//  @include angular-material-theme($light-lilac-theme);
-//}
-

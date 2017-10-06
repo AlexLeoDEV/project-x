@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 
 import { ContactsService } from '../contacts.service';
 import { Contact } from '../contact.model';
-import { Message } from '../../messages/message.model';
 
 @Component({
   templateUrl: './contact-detail.component.html',

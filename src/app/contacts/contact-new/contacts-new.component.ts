@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ContactsService } from '../contacts.service';
-import { Contact, Contacts } from '../contact.model';
+import { Contact } from '../contact.model';
 
 @Component({
   templateUrl: './contacts-new.component.html',
   styleUrls: ['./contacts-new.component.css']
 })
 export class ContactsNewComponent implements OnInit {
-  contacts: Contacts = [];
   contact: Contact = {
     contactId: '',
     contactName: '',
@@ -34,8 +33,6 @@ export class ContactsNewComponent implements OnInit {
       });
   }
 }
-
-
 
 
 

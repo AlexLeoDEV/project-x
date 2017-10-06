@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ContactsService } from './contacts.service';
 
 @Component({
-  selector: 'app-contacts-page',
-  templateUrl: './contacts-page.component.html',
-  styleUrls: ['./contacts-page.component.css']
+  template: `<router-outlet></router-outlet>`
 })
 export class ContactsPageComponent implements OnInit {
 

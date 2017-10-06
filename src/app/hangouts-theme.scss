@@ -1,13 +1,11 @@
 @import '~@angular/material/theming';
-@import "contacts/contact-details/contact-detail_theme";
+
+@import 'contacts/contact-details/contact-detail_theme';
 @import 'messages/message_theme';
 
-
-//main hangouts theme
 @mixin hangouts-theme($theme) {
   @include contact-detail-theme($theme);
 }
-
 
 @mixin header-theme($theme) {
   @include contact-detail-input-color($theme);
