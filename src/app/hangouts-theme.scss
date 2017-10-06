@@ -6,8 +6,3 @@
 @mixin hangouts-theme($theme) {
   @include contact-detail-theme($theme);
 }
-
-@mixin header-theme($theme) {
-  @include contact-detail-input-color($theme);
-}
-

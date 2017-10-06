@@ -1,9 +1,8 @@
 @mixin contact-detail-input-color ($theme) {
-  $custom_color: map-get($theme, header);
-
+  $test: mat-color($theme);
   h3 {
     //color: mat-color($custom_color, unselected-chip);
-    color: aqua;
+    //color: $test;
   }
 }
 

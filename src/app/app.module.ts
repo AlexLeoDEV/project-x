@@ -10,6 +10,7 @@ import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule,
 MdTabsModule, MdToolbarModule, MatInputModule, MatMenuModule, MatRadioModule } from '@angular/material';
 
 import { SharedModule } from './shared/shared.module';
+import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.component';
 
 @NgModule({
   imports: [
@@ -35,13 +36,13 @@ import { SharedModule } from './shared/shared.module';
       {
         path: 'messages',
         loadChildren: './messages/message.module#MessageModule'
-      }
-      // { path: '',   redirectTo: '/contacts', pathMatch: 'full' },
-      // { path: '**', component: PageNotFoundComponent }
+      },
+      { path: '',   redirectTo: '/contacts', pathMatch: 'full' },
+      { path: '**', component: NotFoundPageComponent }
     ]),
     SharedModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, NotFoundPageComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

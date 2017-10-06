@@ -12,14 +12,14 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 //@include contact-detail-theme($candy-app-theme);
 
-.custom-input-color {
-  //$color: aqua;
-  $header-app-primary: mat-palette($mat-green, 900);
-  $header-app-accent: mat-palette($mat-green, 900);
-  $header-app-theme: mat-light-theme($header-app-primary, $header-app-accent, $candy-app-warn);
-
-  //@include header-theme($header-app-theme);
-}
+//.custom-input-color {
+  //$color: orange;
+//  $header-app-primary: mat-palette($mat-green, 900);
+//  $header-app-accent: mat-palette($mat-green, 900);
+//  $header-app-theme: mat-light-theme($header-app-primary, $header-app-accent, $candy-app-warn);
+//
+//  @include contact-detail-input-color($header-app-primary);
+//}
 
 .light-lilac-theme {
   $light-app-primary: mat-palette($mat-deep-purple, 500);
