@@ -13,12 +13,11 @@
     <span class="sent-message-date" fxFlex="0 1 auto" >{{message.messageDate}}</span>
   </div>
 
-  <md-divider></md-divider>
-
   <form class="send-message-form" (ngSubmit)="onSendMessage(message)" fxLayout="row">
+    <md-divider></md-divider>
     <md-form-field class="send-message">
-        <input mdInput placeholder="Enter message"
-             value="" name="message"
+        <input  mdInput placeholder="Enter message"
+             name="message"
              [(ngModel)]="message.messageNew">
     </md-form-field>
 

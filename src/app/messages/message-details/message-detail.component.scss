@@ -1,0 +1,40 @@
+@mixin message-detail-color ($theme) {
+  $background-color: map-get($theme, background);
+
+  .sent-message-group {
+    background-color: mat-color($background-color, unselected-chip);
+    border-radius: 50px;
+  }
+}
+
+.send-message-form {
+  margin-top: 25px;
+}
+
+.send-message {
+  width: 100%;
+}
+
+img {
+  padding-bottom: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 2em;
+}
+
+.contact-name {
+  margin-top: 1.7em;
+  padding-left: 10px;
+}
+
+.sent-message-date {
+  margin: 5px 5px;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.sent-message-text {
+  padding: 15px;
+  font-size: 14px;
+}
+

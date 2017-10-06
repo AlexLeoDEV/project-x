@@ -3,21 +3,14 @@
 @include mat-core();
 
 @import '../app/hangouts-theme.scss';
+@import '../app/messages/message-details/message-detail.component';
 
 $candy-app-primary: mat-palette($mat-green, 400);
 $candy-app-accent: mat-palette($mat-amber, 500);
 $candy-app-warn: mat-palette($mat-red);
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 @include angular-material-theme($candy-app-theme);
-
-//.custom-input-color {
-  //$color: orange;
-//  $header-app-primary: mat-palette($mat-green, 900);
-//  $header-app-accent: mat-palette($mat-green, 900);
-//  $header-app-theme: mat-light-theme($header-app-primary, $header-app-accent, $candy-app-warn);
-//
-//  @include contact-detail-input-color($header-app-primary);
-//}
+@include message-detail-color($candy-app-theme);
 
 .light-lilac-theme {
   $light-app-primary: mat-palette($mat-deep-purple, 500);
@@ -25,6 +18,8 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   $light-warn:    mat-palette($mat-deep-orange);
   $light-lilac-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
   @include angular-material-theme($light-lilac-theme);
+
+  @include message-detail-color($light-lilac-theme);
 }
 
 .light-blue-theme{
@@ -33,6 +28,8 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   $light-warn:    mat-palette($mat-deep-orange);
   $light-blue-theme: mat-light-theme($light-app-primary, $light-app-accent, $light-warn);
   @include angular-material-theme($light-blue-theme);
+
+  @include message-detail-color($light-blue-theme);
 }
 
 
@@ -42,6 +39,8 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   $dark-warn:    mat-palette($mat-deep-orange);
   $dark-purple-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
   @include angular-material-theme($dark-purple-theme);
+
+  @include message-detail-color($dark-purple-theme);
 }
 
 .dark-pink-theme {
@@ -50,4 +49,6 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   $dark-warn:    mat-palette($mat-deep-orange);
   $dark-pink-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-warn);
   @include angular-material-theme($dark-pink-theme);
+
+  @include message-detail-color($dark-pink-theme);
 }
