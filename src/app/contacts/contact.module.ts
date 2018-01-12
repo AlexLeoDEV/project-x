@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { MdButtonModule, MdIconModule, MatInputModule, MdListModule,
-  MdSidenavModule, MdToolbarModule, MdTabsModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatInputModule, MatListModule,
+  MatSidenavModule, MatToolbarModule, MatTabsModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 
@@ -28,15 +28,15 @@ const contactRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    MdButtonModule,
-    MdListModule,
-    MdIconModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
     MatInputModule,
     FormsModule,
     FlexLayoutModule,
-    MdTabsModule,
-    MdToolbarModule,
-    MdSidenavModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatSidenavModule,
     RouterModule.forChild(contactRoutes)
   ],
   declarations: [

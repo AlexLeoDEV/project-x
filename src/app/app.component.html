@@ -1,6 +1,6 @@
 <div class="{{theme}}">
-  <md-sidenav-container>
-    <md-sidenav #sidenav class="sidenav-main">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav class="sidenav-main">
       <span class="logo">Project-X</span>
       <nav>
         <dl>
@@ -9,13 +9,13 @@
           <dt>Item 3</dt>
         </dl>
       </nav>
-    </md-sidenav>
+    </mat-sidenav>
 
     <div fxLayout="column nowrap">
-      <md-toolbar color="primary" fxFlex="none">
+      <mat-toolbar color="primary" fxFlex="none">
         <div class="btn-sidenav-content">
-          <button mdTooltip="Navigation" type="button" md-icon-button (click)="sidenav.open()">
-            <md-icon>menu</md-icon>
+          <button matTooltip="Navigation" type="button" mat-icon-button (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
           </button>
         </div>
 
@@ -30,47 +30,47 @@
           </div>
         </div>
 
-        <button md-icon-button mdTooltip="Select a theme!" [mdMenuTriggerFor]="menu">
-          <md-icon>format_color_fill</md-icon>
+        <button mat-icon-button matTooltip="Select a theme!" [matMenuTriggerFor]="menu">
+          <mat-icon>format_color_fill</mat-icon>
         </button>
-        <md-menu #menu="mdMenu" fxLayout="column">
+        <mat-menu #menu="matMenu" fxLayout="column">
           <div fxLayout="row">
-            <button fxFlex md-menu-item (click)="onChangeTheme('light-lilac-theme')">
+            <button fxFlex mat-menu-item (click)="onChangeTheme('light-lilac-theme')">
               <span class="circle-lilac"></span>
             </button>
-            <button fxFlex md-menu-item (click)="onChangeTheme('light-blue-theme')">
+            <button fxFlex mat-menu-item (click)="onChangeTheme('light-blue-theme')">
               <span class="circle-blue"></span>
             </button>
           </div>
           <div  fxLayout="row">
-            <button md-menu-item (click)="onChangeTheme('dark-purple-theme')">
+            <button mat-menu-item (click)="onChangeTheme('dark-purple-theme')">
               <span class="circle-purple"></span>
             </button>
-            <button md-menu-item (click)="onChangeTheme('dark-pink-theme')">
+            <button mat-menu-item (click)="onChangeTheme('dark-pink-theme')">
               <span class="circle-pink"></span>
             </button>
           </div>
-        </md-menu>
+        </mat-menu>
 
-        <button md-icon-button mdTooltip="New contact" [routerLink]="['/contacts/new']">
-          <md-icon>add</md-icon>
+        <button mat-icon-button matTooltip="New contact" [routerLink]="['/contacts/new']">
+          <mat-icon>add</mat-icon>
         </button>
-      </md-toolbar>
+      </mat-toolbar>
 
-      <nav fxFlex="none" md-tab-nav-bar backgroundColor="primary">
-        <a fxFlex="1 1 auto" md-tab-link
+      <nav fxFlex="none" mat-tab-nav-bar backgroundColor="primary">
+        <a fxFlex="1 1 auto" mat-tab-link
            routerLink="contacts"
            routerLinkActive
            #contactsRla="routerLinkActive"
            [active]="contactsRla.isActive">
-          <md-icon>person</md-icon>
+          <mat-icon>person</mat-icon>
         </a>
-        <a fxFlex="1 1 auto" md-tab-link
+        <a fxFlex="1 1 auto" mat-tab-link
            routerLink="messages"
            routerLinkActive
            #messagesRla="routerLinkActive"
            [active]="messagesRla.isActive">
-          <md-icon>messages</md-icon>
+          <mat-icon>messages</mat-icon>
         </a>
       </nav>
 
@@ -78,5 +78,5 @@
         <router-outlet></router-outlet>
       </div>
     </div>
-  </md-sidenav-container>
+  </mat-sidenav-container>
 </div>

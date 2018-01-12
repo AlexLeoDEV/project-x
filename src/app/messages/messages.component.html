@@ -1,32 +1,32 @@
-<md-sidenav-container>
-  <md-sidenav #sidenav
+<mat-sidenav-container>
+  <mat-sidenav #sidenav
               class="sidenav-messaging"
               mode="side"
               [opened]="hasActiveSubRoute()"
               (onClose)="removeSubRoute()">
-    <md-toolbar color="primary">
-      <button md-icon-button (click)="removeSubRoute()">
-        <md-icon>arrow_back</md-icon>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="removeSubRoute()">
+        <mat-icon>arrow_back</mat-icon>
       </button>
-    </md-toolbar>
+    </mat-toolbar>
     <router-outlet></router-outlet>
-  </md-sidenav>
-  <md-nav-list>
+  </mat-sidenav>
+  <mat-nav-list>
     <ng-container *ngFor="let message of messages">
-      <a md-list-item
+      <a mat-list-item
          [routerLink]="['/messages', message.contactId]" >
-          <img mdListIcon [src]="message.imageUrl">
+          <img matListIcon [src]="message.imageUrl">
 
-          <h3 mdLine fxLayout="row" class="hangouts-theme">
+          <h3 matLine fxLayout="row" class="hangouts-theme">
             <span fxFlex="1 1 auto">{{message.contactName}}</span>
             <span fxFlex="none">{{message.messageDate}}</span>
           </h3>
 
-          <p mdLine>
+          <p matLine>
             <span>{{message.messageText}} </span>
           </p>
       </a>
-      <md-divider></md-divider>
+      <mat-divider></mat-divider>
     </ng-container>
-  </md-nav-list>
-</md-sidenav-container>
+  </mat-nav-list>
+</mat-sidenav-container>

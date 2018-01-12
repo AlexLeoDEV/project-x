@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import {
-  MdIconModule, MdButtonModule, MatInputModule, MdListModule, MdSidenavModule,
-  MdToolbarModule, MdTabsModule } from '@angular/material';
+  MatIconModule, MatButtonModule, MatInputModule, MatListModule, MatSidenavModule,
+  MatToolbarModule, MatTabsModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MessageDetailComponent } from './message-details/message-detail.component';
@@ -26,12 +26,12 @@ const messageRoutes: Routes = [
   imports: [
     CommonModule,
     HttpClientModule,
-    MdButtonModule,
-    MdIconModule,
-    MdTabsModule,
-    MdToolbarModule,
-    MdSidenavModule,
-    MdListModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     MatInputModule,
     FormsModule,
     FlexLayoutModule,

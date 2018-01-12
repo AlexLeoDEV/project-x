@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule, MdTabsModule, MdToolbarModule,
+import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTabsModule, MatToolbarModule,
   MatInputModule, MatMenuModule, MatRadioModule, MatTooltipModule } from '@angular/material';
 
 import { SharedModule } from './shared/shared.module';
@@ -17,12 +17,12 @@ import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.co
     BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
-    MdButtonModule,
-    MdIconModule,
-    MdTabsModule,
-    MdToolbarModule,
-    MdSidenavModule,
-    MdListModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     MatInputModule,
     MatMenuModule,
     MatRadioModule,

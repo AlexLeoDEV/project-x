@@ -5,7 +5,7 @@
       <img [src]="message.imageUrl">
     </div>
     <span fxFlex="1 1 auto" class="contact-name">{{message.contactName}}</span>
-    <md-divider></md-divider>
+    <mat-divider></mat-divider>
   </div>
 
   <div class="sent-message-group" fxLayout="row">
@@ -14,15 +14,15 @@
   </div>
 
   <form class="send-message-form" (ngSubmit)="onSendMessage(message)" fxLayout="row">
-    <md-divider></md-divider>
-    <md-form-field class="send-message">
-        <input  mdInput placeholder="Enter message"
+    <mat-divider></mat-divider>
+    <mat-form-field class="send-message">
+        <input  matInput placeholder="Enter message"
              name="message"
              [(ngModel)]="message.messageNew">
-    </md-form-field>
+    </mat-form-field>
 
-    <button md-icon-button (click)="onSendMessage()">
-      <md-icon>send</md-icon>
+    <button mat-icon-button (click)="onSendMessage()">
+      <mat-icon>send</mat-icon>
     </button>
   </form>
 </div>

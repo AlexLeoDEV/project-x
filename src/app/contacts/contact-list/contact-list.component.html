@@ -1,40 +1,40 @@
-<md-list>
+<mat-list>
   <form class="search-contact-form">
-    <md-form-field class="search-contact-full-width">
-      <input mdInput placeholder="Type a name, email, number or circle" value=""
+    <mat-form-field class="search-contact-full-width">
+      <input matInput placeholder="Type a name, email, number or circle" value=""
              [(ngModel)]="listFilter" name="search-contact">
-    </md-form-field>
+    </mat-form-field>
   </form>
 
  <h4>Frequent Contacts</h4>
-  <md-nav-list>
+  <mat-nav-list>
     <ng-container *ngFor="let contact of contacts | frequentContacts">
-      <md-divider></md-divider>
-      <a md-list-item [routerLink]="['view', contact.contactId]">
-        <img mdListIcon [src]="contact.imageUrl">
-        <h3 mdLine fxLayout="row">
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="['view', contact.contactId]">
+        <img matListIcon [src]="contact.imageUrl">
+        <h3 matLine fxLayout="row">
           <span fxFlex="1 1 auto">{{contact.contactName}}</span>
         </h3>
-        <p mdLine>
+        <p matLine>
           <span>{{contact.contactNumber}} </span>
         </p>
       </a>
     </ng-container>
-  </md-nav-list>
+  </mat-nav-list>
 
   <h4>Contacts</h4>
-  <md-nav-list>
+  <mat-nav-list>
     <ng-container *ngFor="let contact of filteredContacts">
-      <md-divider></md-divider>
-      <a md-list-item [routerLink]="['view', contact.contactId]">
-        <img mdListIcon [src]="contact.imageUrl">
-        <h3 mdLine fxLayout="row">
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="['view', contact.contactId]">
+        <img matListIcon [src]="contact.imageUrl">
+        <h3 matLine fxLayout="row">
           <span fxFlex="1 1 auto">{{contact.contactName}}</span>
         </h3>
-        <p mdLine>
+        <p matLine>
           <span>{{contact.contactNumber}} </span>
         </p>
       </a>
     </ng-container>
-  </md-nav-list>
-</md-list>
+  </mat-nav-list>
+</mat-list>

@@ -1,25 +1,25 @@
 <form class="contact-details-form" (ngSubmit)="onCreateContact(contact)">
 
-  <md-form-field class="contact-details-full-width">
-    <input mdInput placeholder="Name" name="name" [(ngModel)]="contact.contactName">
-    <md-icon mdSuffix>mode_edit</md-icon>
-  </md-form-field>
+  <mat-form-field class="contact-details-full-width">
+    <input matInput placeholder="Name" name="name" [(ngModel)]="contact.contactName">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
 
-  <md-form-field class="contact-details-full-width">
-    <input mdInput placeholder="Number" name="number" [(ngModel)]="contact.contactNumber">
-    <md-icon mdSuffix>mode_edit</md-icon>
-  </md-form-field>
+  <mat-form-field class="contact-details-full-width">
+    <input matInput placeholder="Number" name="number" [(ngModel)]="contact.contactNumber">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
 
-  <md-form-field class="contact-details-full-width">
-    <input mdInput placeholder="Image Url" name="url" [(ngModel)]="contact.imageUrl">
-    <md-icon mdSuffix>mode_edit</md-icon>
-  </md-form-field>
+  <mat-form-field class="contact-details-full-width">
+    <input matInput placeholder="Image Url" name="url" [(ngModel)]="contact.imageUrl">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
 
-  <button md-raised-button type="button" (click)="onBack()">
-    <md-icon>keyboard_arrow_left</md-icon>Back
+  <button mat-raised-button type="button" (click)="onBack()">
+    <mat-icon>keyboard_arrow_left</mat-icon>Back
   </button>
-  <button md-raised-button>
-    <md-icon>create</md-icon>Create
+  <button mat-raised-button>
+    <mat-icon>create</mat-icon>Create
   </button>
 </form>
 
